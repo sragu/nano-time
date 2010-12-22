@@ -5,6 +5,7 @@ Most of the other implementations available were using the System.currentTimeMil
 Usage:
 
 StopWatch watch = new StopWatch("fetching records").start();
+//do something
 watch.stop().prettyPrint(System.out, TimeUnit.MILLISECONDS);
 
 ---OR---
