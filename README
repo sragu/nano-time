@@ -1,3 +1,26 @@
 To build simple stop watch utility for Java using the System.nanoTime()
 
 Most of the other implementations available were using the System.currentTimeMills() which is vastly inaccurate and insufficient.
+
+Usage:
+
+StopWatch watch = new StopWatch("fetching records").start();
+watch.stop().prettyPrint(System.out, TimeUnit.MILLISECONDS);
+
+---OR---
+
+StopWatch watch = new StopWatch("fetching records").start();
+try{
+	//do something
+}
+finally{
+	watch.stop().prettyPrint(System.out, TimeUnit.MILLISECONDS);
+}
+
+Look for other public methods in StopWatch class
+
+Licensing Information:
+
+The Software shall be used for Good, not Evil.
+
+For full terms refer: http://www.crockford.com/JSON/license.html
