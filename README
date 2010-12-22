@@ -1,0 +1,3 @@
+To build simple stop watch utility for Java using the System.nanoTime()
+
+Most of the other implementations available were using the System.currentTimeMills() which is vastly inaccurate and insufficient.
