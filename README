@@ -7,7 +7,16 @@ Usage:
 StopWatch watch = new StopWatch("fetching records").start();
 //do something
 watch.stop().prettyPrint(System.out, TimeUnit.MILLISECONDS);
+// will print the time elapsed on the task
 
+---OR---
+
+StopWatch watch = new StopWatch("fetching records").start();
+//do something
+watch.step()
+//do something else
+watch.stop().prettyPrint(System.out, TimeUnit.MILLISECONDS);
+// will print the time elapsed on the task with step intervals
 ---OR---
 
 StopWatch watch = new StopWatch("fetching records").start();
